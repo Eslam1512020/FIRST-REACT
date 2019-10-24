@@ -1,14 +1,28 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
+      <header>Parts
+        <partList> 
+          <parts>
+            jklfgbjkgbkfbnmkl
+          </parts>
+          <parts>
+            dfklsgfgkfnbef
+          </parts>
+        </partList>
       </header>
     </div>
   );
 }
 
 export default App;
+
+function partList(props){
+  return <ul> {props.children}></ul>
+}
+function part(props){
+  return <li> {props.children} </li>
+}
+
